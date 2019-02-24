@@ -64,7 +64,18 @@ markdown_extensions:
 extra_javascript:
   - 'js/extra.js'
   - 'js/baidu-tongji.js'
-  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+  #- 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+  #- 'https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js'
+  #- 'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'
+  #- 'https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js'
+  #- 'https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js'
+  #- 'js/umlconvert.js'
+  - js/webfont.js
+  - js/snap.svg-min.js
+  - js/underscore-min.js
+  - js/sequence-diagram-min.js   
+  - js/uml-converter.js
+  - js/sequence-loader.js
 
 nav:
     - Python:
@@ -99,16 +110,35 @@ nav:
                     - 1. mongo: python/lib/nosql/mongo/mongo.index.md
                 - 2. memcached:
                     - 1. memcached: python/lib/nosql/memcached/memcached.index.md
+                - 3. redis:
+                    - 1. redis: python/lib/nosql/redis/redis.index.md
+                    - 2. redis pipeline: python/lib/nosql/redis/redis.pipeline.md
+                    - 3. redis transaction: python/lib/nosql/redis/redis.transaction.md
+                    - 4. redis pub_sub: python/lib/nosql/redis/redis.pub_sub.md
+                    - 5. redis sentinel: python/lib/nosql/redis/redis.sentinel.md
             - 10. 数据处理库: 
                 - 1. numPy: 
                     - 1. 介绍: python/lib/numPy/1.index.md
                 - 2. pandas: 
-                    - 1. 介绍: python/lib/pandas/1.index.md                    
+                    - 1. 介绍: python/lib/pandas/1.index.md   
+            - 11. uuid:
+                - 1. uuid: python/lib/uuid/uuid.index.md
+            - 12. LRU:
+                - 1. LRU: python/lib/LRU/LRU.index.md
     - Linux:
           - 小工具: 
-            - 1. sersync: linux/server/sersync.md
+            - 1. sersync: linux/server/sersync/sersync.md
             - 2. elinks: tools/elinks/1.index.md
             - 3. Linux终端录屏和回放: tools/script_scriptreplay/1.index.md
+          - 服务:
+            - 1. Harbor: 
+                - 1. Harbor: linux/server/harbor/harbor.index.md
+            - 2. PPPOE:
+                - 1. PPPOE: linux/server/pppoe/pppoe.index.md
+            - 3. django项目部署: linux/server/deploy_django/deploy_django.index.md
+          - 证书:
+            - 1. Tomcat:
+                - 1. Tomcat: linux/server/certificate/tomcat.index.md
     - 前端:
           - Vue: frontend/vue/index.md
     - 服务:
@@ -121,6 +151,10 @@ nav:
           - 3. gitlab:
             - 1. gitlab: tools/gitlab/1.gitlab.md
             - 2. 关闭注册: tools/gitlab/2.gitlab_close_register.md
+            - 3. 找回root密码: tools/gitlab/3.set_root_pwd.md
+          - 4. nosql:
+            - 1. redis:
+                - 1. redis-sentinel: linux/server/redis/redis-sentinel.md
     - 教程:
           - 教程: course/index.md
           
